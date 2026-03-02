@@ -7,206 +7,134 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Боковое меню -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-brand">
-            <span class="brand-icon">🔥</span>
-            <span class="brand-text">@cvvcannabis</span>
+            <span class="brand-icon">🌿</span>
+            <div>
+                <p class="brand-label">Official</p>
+                <span class="brand-text">@cvvcannabis</span>
+            </div>
         </div>
         <nav class="sidebar-nav">
-            <a href="#home" class="nav-item" onclick="showSection('home')" data-section="home">
-                <span class="nav-icon">🏠</span> Главная
-            </a>
-            <a href="#chat" class="nav-item" onclick="showSection('chat')" data-section="chat">
-                <span class="nav-icon">💬</span> Чат
-            </a>
-            <a href="#channel" class="nav-item" onclick="showSection('channel')" data-section="channel">
-                <span class="nav-icon">📢</span> Канал
-            </a>
-            <a href="#music" class="nav-item" onclick="showSection('music')" data-section="music">
-                <span class="nav-icon">🎵</span> Музыка
-            </a>
-            <a href="#rules" class="nav-item" onclick="showSection('rules')" data-section="rules">
-                <span class="nav-icon">📜</span> Правила
-            </a>
-            <a href="#ads" class="nav-item" onclick="showSection('ads')" data-section="ads">
-                <span class="nav-icon">📩</span> Реклама
-            </a>
-            <a href="#nft" class="nav-item" onclick="showSection('nft')" data-section="nft">
-                <span class="nav-icon">💎</span> NFT
-            </a>
-            <a href="#friends" class="nav-item" onclick="showSection('friends')" data-section="friends">
-                <span class="nav-icon">👥</span> Друзья
-            </a>
-            <a href="#contacts" class="nav-item" onclick="showSection('contacts')" data-section="contacts">
-                <span class="nav-icon">🔗</span> Контакты
-            </a>
+            <a href="#home" class="nav-item" onclick="showSection('home')" data-section="home"><span class="nav-icon">🏠</span> Главная</a>
+            <a href="#chat" class="nav-item" onclick="showSection('chat')" data-section="chat"><span class="nav-icon">💬</span> Чат</a>
+            <a href="#channel" class="nav-item" onclick="showSection('channel')" data-section="channel"><span class="nav-icon">📢</span> Канал</a>
+            <a href="#music" class="nav-item" onclick="showSection('music')" data-section="music"><span class="nav-icon">🎵</span> Музыка</a>
+            <a href="#rules" class="nav-item" onclick="showSection('rules')" data-section="rules"><span class="nav-icon">📜</span> Правила</a>
+            <a href="#ads" class="nav-item" onclick="showSection('ads')" data-section="ads"><span class="nav-icon">📩</span> Реклама</a>
+            <a href="#nft" class="nav-item" onclick="showSection('nft')" data-section="nft"><span class="nav-icon">💎</span> NFT гарант</a>
+            <a href="#friends" class="nav-item" onclick="showSection('friends')" data-section="friends"><span class="nav-icon">👥</span> Друзья</a>
+            <a href="#contacts" class="nav-item" onclick="showSection('contacts')" data-section="contacts"><span class="nav-icon">🔗</span> Контакты</a>
         </nav>
         <div class="sidebar-footer">
-            <p>© 2026</p>
+            <p>© 2026 — связь в 1 клик</p>
         </div>
     </aside>
 
-    <!-- Кнопка для мобильного меню -->
-    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">☰</button>
 
-    <!-- Главная страница -->
     <section id="home" class="section active">
         <div class="container">
             <div class="hero">
                 <div class="hero-banner">
                     <div class="avatar">@cvvcannabis</div>
+                    <div class="hero-tag">Официальный проект</div>
                 </div>
-                <h1 class="hero-title">Добро пожаловать!</h1>
+                <h1 class="hero-title">Добро пожаловать в @cvvcannabis</h1>
                 <p class="hero-description">
-                    Добро пожаловать на официальный сайт проекта @cvvcannabis. 
-                    Здесь собраны все основные ссылки, каналы, чаты и контакты.
+                    Добро пожаловать на официальный сайт проекта @cvvcannabis. Здесь собраны все основные ссылки, каналы, чаты и контакты.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#chat" class="btn btn-primary" onclick="showSection('chat')">
-                        💬 Войти в чат
-                    </a>
-                    <a href="#channel" class="btn btn-secondary" onclick="showSection('channel')">
-                        📢 Перейти в канал
-                    </a>
-                    <a href="#music" class="btn btn-primary" onclick="showSection('music')">
-                        🎵 Музыкальный канал
-                    </a>
-                    <a href="#rules" class="btn btn-secondary" onclick="showSection('rules')">
-                        📜 Правила чата
-                    </a>
-                    <a href="#ads" class="btn btn-primary" onclick="showSection('ads')">
-                        📩 Реклама
-                    </a>
+                    <a href="#chat" class="btn btn-primary" onclick="showSection('chat')">💬 Войти в чат</a>
+                    <a href="#channel" class="btn btn-secondary" onclick="showSection('channel')">📢 Перейти в канал</a>
+                    <a href="#music" class="btn btn-primary" onclick="showSection('music')">🎵 Музыкальный канал</a>
+                    <a href="#rules" class="btn btn-secondary" onclick="showSection('rules')">📜 Правила чата</a>
+                    <a href="#ads" class="btn btn-primary" onclick="showSection('ads')">📩 Реклама</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Чат -->
     <section id="chat" class="section">
         <div class="container">
             <h2>💬 Чат</h2>
             <div class="content-card">
                 <p class="description">Основной чат для общения участников проекта.</p>
-                <div class="link-box">
-                    <p>Чат: <a href="https://t.me/+WGf2wTGQzF1jYTJi" target="_blank" class="link">https://t.me/+WGf2wTGQzF1jYTJi</a></p>
-                </div>
-                <a href="https://t.me/+WGf2wTGQzF1jYTJi" target="_blank" class="btn btn-primary">
-                    ➡️ Перейти в чат
-                </a>
+                <div class="link-box"><p>Чат: <a href="https://t.me/+WGf2wTGQzF1jYTJi" target="_blank" class="link">https://t.me/+WGf2wTGQzF1jYTJi</a></p></div>
+                <a href="https://t.me/+WGf2wTGQzF1jYTJi" target="_blank" class="btn btn-primary">➡️ Перейти в чат</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Канал -->
     <section id="channel" class="section">
         <div class="container">
             <h2>📢 Канал</h2>
             <div class="content-card">
                 <p class="description">Основной канал проекта, где публикуются новости, информация и обновления.</p>
-                <div class="link-box">
-                    <p>Канал: <a href="https://t.me/+9UbeBj3-TNpmNmQy" target="_blank" class="link">https://t.me/+9UbeBj3-TNpmNmQy</a></p>
-                </div>
-                <a href="https://t.me/+9UbeBj3-TNpmNmQy" target="_blank" class="btn btn-primary">
-                    ➡️ Перейти в канал
-                </a>
+                <div class="link-box"><p>Канал: <a href="https://t.me/+9UbeBj3-TNpmNmQy" target="_blank" class="link">https://t.me/+9UbeBj3-TNpmNmQy</a></p></div>
+                <a href="https://t.me/+9UbeBj3-TNpmNmQy" target="_blank" class="btn btn-primary">➡️ Перейти в канал</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Музыка -->
     <section id="music" class="section">
         <div class="container">
             <h2>🎵 Музыка</h2>
             <div class="content-card">
                 <p class="description">Музыкальный канал проекта.</p>
-                <div class="link-box">
-                    <p>Канал: <a href="https://t.me/richomonsex2024" target="_blank" class="link">https://t.me/richomonsex2024</a></p>
-                </div>
-                <a href="https://t.me/richomonsex2024" target="_blank" class="btn btn-primary">
-                    ➡️ Открыть канал
-                </a>
+                <div class="link-box"><p>Канал: <a href="https://t.me/richomonsex2024" target="_blank" class="link">https://t.me/richomonsex2024</a></p></div>
+                <a href="https://t.me/richomonsex2024" target="_blank" class="btn btn-primary">➡️ Открыть канал</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Правила -->
     <section id="rules" class="section">
         <div class="container">
             <h2>📜 Правила чата</h2>
             <div class="content-card">
                 <p class="description">Перед тем как писать в чате, обязательно ознакомьтесь с правилами.</p>
-                <div class="link-box">
-                    <p>Контакт: <a href="https://t.me/pravilachatacannabis" target="_blank" class="link">@pravilachatacannabis</a></p>
-                </div>
-                <a href="https://t.me/pravilachatacannabis" target="_blank" class="btn btn-primary">
-                    ➡️ Открыть правила
-                </a>
+                <div class="link-box"><p>Контакт: <a href="https://t.me/pravilachatacannabis" target="_blank" class="link">@pravilachatacannabis</a></p></div>
+                <a href="https://t.me/pravilachatacannabis" target="_blank" class="btn btn-primary">➡️ Открыть правила</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Реклама -->
     <section id="ads" class="section">
         <div class="container">
             <h2>📩 Реклама</h2>
             <div class="content-card">
                 <p class="description">По вопросам рекламы обращайтесь.</p>
-                <div class="link-box">
-                    <p>Контакт: <a href="https://t.me/propagandareklama" target="_blank" class="link">@propagandareklama</a></p>
-                </div>
-                <a href="https://t.me/propagandareklama" target="_blank" class="btn btn-primary">
-                    ➡️ Связаться
-                </a>
+                <div class="link-box"><p>Контакт: <a href="https://t.me/propagandareklama" target="_blank" class="link">@propagandareklama</a></p></div>
+                <a href="https://t.me/propagandareklama" target="_blank" class="btn btn-primary">➡️ Связаться</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел NFT -->
     <section id="nft" class="section">
         <div class="container">
             <h2>💎 NFT гарант</h2>
             <div class="content-card">
-                <p class="description">Могу выступить гарантом при NFT сделках.</p>
-                <div class="highlight-box">
-                    Комиссия: <strong>2%</strong>
-                </div>
-                <p style="margin: 20px 0; font-size: 14px; color: #999;">
-                    Контакт: <a href="https://t.me/cvvcannabis" target="_blank" class="link">@cvvcannabis</a>
-                </p>
-                <a href="https://t.me/cvvcannabis" target="_blank" class="btn btn-primary">
-                    ➡️ Связаться
-                </a>
+                <p class="description">Могу выступить гарантом при NFT сделках. Комиссия — <strong>2%</strong>.</p>
+                <a href="https://t.me/cvvcannabis" target="_blank" class="btn btn-primary">➡️ Связаться @cvvcannabis</a>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Друзья -->
     <section id="friends" class="section">
         <div class="container">
             <h2>👥 Друзья</h2>
             <div class="content-card">
-                <p class="description">Список друзей проекта</p>
+                <p class="description">Список друзей проекта:</p>
                 <div class="friends-list">
-                    <a href="https://t.me/trankillow" target="_blank" class="friend-item">
-                        <span class="friend-icon">🔸</span> @trankillow
-                    </a>
-                    <a href="https://t.me/thedifrasia" target="_blank" class="friend-item">
-                        <span class="friend-icon">🔸</span> @thedifrasia
-                    </a>
-                    <a href="https://t.me/psychforse1" target="_blank" class="friend-item">
-                        <span class="friend-icon">🔸</span> @psychforse1
-                    </a>
-                    <a href="https://t.me/monacopsychoactiv" target="_blank" class="friend-item">
-                        <span class="friend-icon">🔸</span> @monacopsychoactiv
-                    </a>
+                    <a href="https://t.me/trankillow" target="_blank" class="friend-item">@trankillow</a>
+                    <a href="https://t.me/thedifrasia" target="_blank" class="friend-item">@thedifrasia</a>
+                    <a href="https://t.me/psychforse1" target="_blank" class="friend-item">@psychforse1</a>
+                    <a href="https://t.me/monacopsychoactiv" target="_blank" class="friend-item">@monacopsychoactiv</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Раздел Контакты -->
     <section id="contacts" class="section">
         <div class="container">
             <h2>🔗 Дополнительные ссылки</h2>
@@ -214,28 +142,21 @@
                 <div class="contacts-grid">
                     <div class="contact-item">
                         <h3>Био</h3>
-                        <a href="https://t.me/cannabis_osint" target="_blank" class="btn btn-primary">
-                            Открыть
-                        </a>
+                        <a href="https://t.me/cannabis_osint" target="_blank" class="btn btn-primary">Открыть</a>
                     </div>
                     <div class="contact-item">
                         <h3>Канал</h3>
-                        <a href="https://t.me/tgimprint" target="_blank" class="btn btn-primary">
-                            Открыть
-                        </a>
+                        <a href="https://t.me/tgimprint" target="_blank" class="btn btn-primary">Открыть</a>
                     </div>
                     <div class="contact-item">
                         <h3>Чат знакомств</h3>
-                        <a href="https://t.me/chatznakomstwatg" target="_blank" class="btn btn-primary">
-                            Открыть
-                        </a>
+                        <a href="https://t.me/chatznakomstwatg" target="_blank" class="btn btn-primary">Открыть</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 @cvvcannabis | Все права защищены</p>
